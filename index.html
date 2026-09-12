@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Advanced Chat App</div>
+        <div id="chat-box"></div>
+        
+        <!-- Username Input -->
+        <div class="input-container">
+            <input type="text" id="username" placeholder="Enter your name..." onkeypress="handleUsername(event)">
+            <button id="setUsernameBtn">Set</button>
+        </div>
+        
+        <!-- Message Input -->
+        <div class="input-container">
+            <input type="text" id="message" placeholder="Type a message..." disabled>
+            <button id="sendBtn" disabled>Send</button>
+        </div>
+        
+        <button class="clear-btn" id="clearChatBtn">Clear Chat</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
